@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".newMainActivity">
+
+
+
+    <ImageView
+        android:id="@+id/tu"
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ting"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+    <include layout="@layout/titlelayout"/>
+    <GridLayout
+        android:id="@+id/gg"
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:layout_below="@id/tu"
+android:layout_marginTop="3dp"
+        android:background="@drawable/border"
+        android:columnCount="3"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.408">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/dianliu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.155"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.402" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/dianya"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/gonglv"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.855"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.402" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="96dp"
+            android:layout_height="22dp"
+            android:textColor="#000000"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.111"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.502" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="96dp"
+            android:layout_height="22dp"
+            android:textColor="#000000"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.882"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.502" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="96dp"
+            android:layout_height="22dp"
+            android:textColor="#000000"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="5dp"
+            android:gravity="center_horizontal"
+            android:text="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.502" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="117dp"
+            android:layout_height="24dp"
+            android:textColor="#000000"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_horizontal"
+            android:text="设备电流/A"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.111"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.534" />
+
+        <TextView
+
+            android:layout_width="117dp"
+            android:layout_height="24dp"
+            android:gravity="center_horizontal"
+            android:textColor="#000000"
+            android:text="设备电压/V"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.534" />
+
+        <TextView
+
+            android:layout_width="117dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#000000"
+            android:gravity="center_horizontal"
+            android:text="设备功率/W"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.885"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.534" />
+    </GridLayout>
+<TextView
+    android:id="@+id/tv3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="控制继电器"
+    android:textSize="17sp"
+    android:textColor="#000000"
+    android:layout_marginTop="6dp"
+    android:layout_below="@+id/gg"
+    android:gravity="center_horizontal"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintHorizontal_bias="0.885"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.534"/>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="274dp"
+        android:layout_below="@+id/tv3"
+android:layout_marginTop="6dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:columnCount="2"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.912">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="163dp"
+            android:layout_height="67dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shape"
+            android:text="继电器1"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.133"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.667" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="163dp"
+            android:layout_height="67dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape"
+            android:text="继电器2"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.859"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.667" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="163dp"
+            android:layout_height="67dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape"
+            android:text="继电器3"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.133"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.819" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="163dp"
+            android:layout_height="67dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/shape"
+            android:text="继电器4"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.859"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.819" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="163dp"
+            android:layout_height="67dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/shape"
+            android:text="继电器5"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.133"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.975" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="163dp"
+            android:layout_height="67dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/shape"
+            android:text="继电器6"
+            android:textColor="#ffffff"
+            android:layout_marginTop="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.863"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.975" />
+
+    </GridLayout>
+</RelativeLayout>
